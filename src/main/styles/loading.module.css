@@ -1,0 +1,18 @@
+.container {
+    color: var(--color-text-dark);
+    display: grid;
+    margin: 12.5% 50px;
+    text-align: center;
+}
+
+.container img {
+    margin-top: 15px;
+    border-radius: 16px;
+}
+
+.container h1 {
+    background: linear-gradient(var(--color-purple-dark)0%, var(--color-red-light)100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

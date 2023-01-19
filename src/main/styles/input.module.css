@@ -1,0 +1,48 @@
+.container {
+    display: grid;
+}
+
+.disabled {
+    display: grid;
+    opacity: 0.5;
+}
+
+.input {
+    margin: 14px;
+    border-radius: 8px;
+    background: transparent;
+    color: var(--color-text-dark);
+    padding: 8px;
+    border: solid 1px;
+    font-family: 'Fira Code';
+}
+
+.input:focus {
+    outline: solid 2px var(--color-purple-dark);
+}
+
+.label {
+    transition: 0.6s;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background: var(--color-bg-dark-1);
+    padding: 0px 5px 0px 5px;
+    margin-left: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.label:hover {
+    color: var(--color-purple-dark);
+}
+
+.label svg {
+    transition: 0.6s;
+    transform: translate(0px, 2px);
+}
+
+.label:hover svg {
+    transition: 0.6s;
+    transform: scale(1.2) translate(0px, 2px);
+}

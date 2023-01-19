@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    color: var(--color-text-dark);
+    justify-content: center;
+}
+
+.container svg {
+    margin: 5px;
+}

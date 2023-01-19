@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Dark Theme */
+    --color-bg-dark-1 : #181818;
+    --color-bg-dark-2 : #282a36;
+    --color-text-dark : #f1e7db;
+    --color-text-dark-2 : #ecefec;
+    --color-blue-dark : #05AFF2;
+    --color-yellow-dark : #F2E205;
+    --color-red-dark : #F24405;
+    --color-green-dark : #05F240;
+    --color-purple-dark : #EE05F2;
+
+    /* Light Theme */
+    --color-bg-light-1 : #f1e7db;
+    --color-bg-light-2 : #c4c7b5;
+    --color-text-light : #000;
+    --color-blue-light : #0554F2;
+    --color-yellow-light : #F29F05;
+    --color-red-light : #F21905;
+    --color-green-light : #078C03;
+    --color-purple-light : #4413F2;
+
+     /* Utils */
+     --shadow : 2px 2px 10px;
+     --border : solid 2px;
+}
+
+
+#portal {
+    position: fixed;
+    z-index: 99;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--color-bg-dark-1);
+    font-family: 'Poppins', sans-serif;
+}

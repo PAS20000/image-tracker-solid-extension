@@ -1,0 +1,46 @@
+{
+  "manifest_version":3,
+  "version":"1.0.5",
+  "name":"Image Tracker",
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "tabs",
+    "windows",
+    "notifications",
+    "pageCapture",
+    "activeTab"
+  ],
+  "file_system_provider_capabilities": {
+    "configurable": true,
+    "watchable": false,
+    "multiple_mounts": true,
+    "source": "network"
+  },
+  "options_page": "popup.html",
+  "description":"Download images from instagram or from any other site" ,
+  "author":"Pedro Augusto Schroeder (PAS)",
+  "action" : {
+      "default_title": "Image Tracker",
+      "default_icon": "image-tracker-logo-orichalcum-09-10-2022.png"
+  },
+  "icons": {
+    "16": "image-tracker-logo-orichalcum-09-10-2022.png",
+    "48": "image-tracker-logo-orichalcum-09-10-2022.png",
+    "128": "image-tracker-logo-orichalcum-09-10-2022.png"
+  },
+  "background": { "service_worker": "background.js", "type": "module" },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+        "matches":["<all_urls>"],
+        "match_origin_as_fallback": true,
+        "js": [
+            "content.js"
+        ]        
+    }
+  ],
+  "minimum_chrome_version": "93"
+}

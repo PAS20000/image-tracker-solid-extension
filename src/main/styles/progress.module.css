@@ -1,0 +1,32 @@
+.progress::before {
+    content: attr(data-progress);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+}
+
+.container button {
+    padding-top: 12px;
+}
+
+.progress {
+    transition: 0.6s ease-in;
+    background-image: linear-gradient(var(--color-purple-light), var(--color-blue-dark));
+    border-radius: 18px;
+    height: 100%;
+}
+
+.void-bar {
+    margin: 20px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--color-bg-dark-2);
+}
+
+
+.info {
+    margin-top: 10px;
+    font-family: 'Fira Code';
+}

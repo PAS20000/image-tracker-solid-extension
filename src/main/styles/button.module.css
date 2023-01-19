@@ -1,0 +1,83 @@
+@keyframes Show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.container button, .container a {
+    transition: 0.6s;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: var(--color-text-dark);
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.container button:disabled, .submit button:disabled {
+   transition: 0.6s;
+   opacity: 0.5;
+}
+
+.container button:hover, .container a:hover {
+    transition: 0.6s;
+    transform: scale(1.5);
+    color: var(--color-purple-dark);
+}
+
+.submit button {
+    transition: 0.6s;
+    border-radius: 32px;
+    padding: 5px;
+    cursor: pointer;
+    background-image: linear-gradient(var(--color-purple-light), var(--color-purple-dark));
+    color: var(--color-text-dark);
+    font-size: 0.8rem;
+    font-family: 'Fira Code';
+    text-transform: uppercase;
+    width: 50%;
+    margin: 10px;
+    border: none;
+}
+
+.submit button:hover {
+    transition: 0.6s;
+    transform: scale(1.1);
+}
+
+.button-carousel button {
+    animation: Show 0.6s;
+    transition: 0.6s;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    color: var(--color-text-dark);
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0px 10px;
+    padding: 8px;
+}
+
+.button-carousel button:hover {
+    transition: 0.6s;
+    background-color: var(--color-red-dark);
+}
+
+.selected button {
+    transition: 0.6s;
+    cursor: pointer;
+    background-color: var(--color-purple-light);
+    border: none;
+    border-radius: 8px;
+    color: var(--color-text-dark);
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0px 10px;
+    padding: 8px;
+}
