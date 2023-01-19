@@ -1,9 +1,9 @@
 import RequestError from "../errors/pixel-request"
-import { CreateUseCaseAdd } from "../interfaces/pixel-use-case-add"
+import { CreateUseCasePut } from "../interfaces/pixel-use-case-put"
 
-const UseCaseAdd : CreateUseCaseAdd = async ({ store, item, cache }) => new Promise(
-    async (resolve : (value : any) => void, reject) => {
-        const req = store.add(item)
+const UseCasePut : CreateUseCasePut = async ({ store, item, cache }) => new Promise(
+    (resolve : (value : any) => void, reject) => {
+        const req = store.put(item)
         req.onsuccess = () => {
             const result = req.result
             cache.push(result)
@@ -15,5 +15,4 @@ const UseCaseAdd : CreateUseCaseAdd = async ({ store, item, cache }) => new Prom
         }
     }
 )
-
-export default UseCaseAdd
+export default UseCasePut

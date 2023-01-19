@@ -115,6 +115,7 @@ const Panel = () => {
                                             const builder = MakeImageModule()
                                             await builder.bulkDelete(getImages().values.map(img => img.id))
                                             setImages(await builder.readAll())
+                                            window.location.reload()
                                         }}>
                                             Delete
                                         </Button>

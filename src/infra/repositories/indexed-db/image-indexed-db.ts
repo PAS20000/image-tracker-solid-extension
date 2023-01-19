@@ -1,5 +1,5 @@
 import { ImageRepositoryResponse } from "../../../application/models/image"
-import Pixel from "../pixel-db/pixel"
+import Pixel from "./pixel/pixel"
 
 export default class RepositoryImageIndexedDB implements ImageRepositoryResponse {
     readonly client = new Pixel({
